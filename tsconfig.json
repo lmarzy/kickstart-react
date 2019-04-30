@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "typeRoots": ["./node_modules/@types"],
+      "strict": true,
+      "jsx": "react",
+      "rootDir": "./src",
+      "experimentalDecorators": true,
+      "lib": ["dom", "es2015"],
+      "outDir": "./dist/",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "baseUrl": "src",
+      "paths": {
+        "@app/*": ["app/*"],
+        "@views": ["views/index"],
+        "@views/*": ["views/*"]
+      }
+    },
+    "exclude": ["node_modules", "cypress"]
+  }
