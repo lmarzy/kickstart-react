@@ -2,10 +2,14 @@ import React from 'react';
 
 import { Footer, Header } from './components';
 
-export const App = () => (
+import '../styles/app.scss';
+
+const App = () => (
   <>
     <Header />
-    <h1>Kickstart React</h1>
+    <h1>Kickstart React App</h1>
     <Footer />
   </>
 );
+
+export default App;

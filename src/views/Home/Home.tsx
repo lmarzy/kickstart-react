@@ -1,21 +1,9 @@
 import React from 'react';
 
-export const initialState = {
-  title: 'Home',
-};
+const Home = () => (
+  <div>
+    <h1>Home Page</h1>
+  </div>
+);
 
-export type HomeState = Readonly<typeof initialState>;
-
-export class Home extends React.Component<{}, HomeState> {
-  readonly state: HomeState = initialState;
-
-  render() {
-    const { title } = this.state;
-
-    return (
-      <div className="home">
-        <h1>{title}</h1>
-      </div>
-    );
-  }
-}
+export default Home;
